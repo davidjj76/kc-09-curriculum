@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>David Jiménez - Lista de tareas</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="canonical" href="http://kenobi.rockstardevops.com/tasks.html" />
+    <link rel="stylesheet" href="style/style.min.css">
+    <link rel="stylesheet" href="style/tasks.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <script src="js/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <header class="header">
+    </header>
+    <nav class="navbar navbar-opaque">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href="index.html" title="Inicio">Inicio</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="index.html#quien-soy" title="Perfil">Quién soy</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="index.html#estudios" title="Formación">Estudios</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="index.html#experiencia" title="Experiencia">Experiencia</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="index.html#sobre-mi" title="Personal">Sobre mí</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="index.html#contacto" title="Contacto">Contacto</a></li>
+            <li class="navbar-item active"><a class="navbar-link" href="tasks.html" title="Tareas">Tareas</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="tasks section-content">
+            <h2 class="section-title">LISTA DE TAREAS</h2>
+            <form class="tasks-form">
+                <div class="tasks-form-row">
+                    <input type="text" id="newTaskName" name="name" required>
+                    <label for="newTaskName">Teclea nueva tarea y pulsa 'Enter' para añadir a la lista</label>
+                </div>
+            </form>
+            <div class="row">
+                <div id="tasks-loader" class="loader-container">
+                    <div class="loader">
+                    </div>
+                    Conectando con el servidor...
+                </div>
+                <div class="col-6 tasks-container">
+                    <h3 class="tasks-container-title">PENDIENTES</h3>
+                    <ul id="todoTasksList" class="tasks-list"></ul>
+                </div>
+                <div class="col-6 tasks-container">
+                    <h3 class="tasks-container-title">TERMINADAS</h3>
+                    <ul id="doneTasksList" class="tasks-list"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <span class="footer-text">David Jiménez Jiménez &copy; 2016</span>
+        <div class="footer-icons">
+            <a class="footer-link" href="https://www.facebook.com/david.jimenezjimenez.71" target="_blank">
+                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="footer-link" href="https://twitter.com/davidjj_76" target="_blank">
+                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="footer-link" href="https://www.linkedin.com/in/david-jimenez-jimenez/" target="_blank">
+                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="footer-link" href="https://github.com/davidjj76" target="_blank">
+                <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="js/tasks.js"></script>
+</body>
+
+</html>

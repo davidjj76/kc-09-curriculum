@@ -1,0 +1,49 @@
+@keyframes opacityAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+    height: 100%;
+    animation: opacityAnimation 1s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Especial para firefox, para evitar las lineas de puntos alrededor
+   de los textos de botones y enlaces  */
+button::-moz-focus-inner {
+  border: 0;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+input {
+    height: 80px;
+}
+
+input:invalid {
+    box-shadow: none;
+}

@@ -1,0 +1,23 @@
+.footer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #323336;
+	color: #FFFFFF;
+	padding: 20px;
+}
+
+.footer .footer-text {
+	flex-grow: 1;
+}
+
+.footer .footer-icons {
+	flex-grow: 0;
+}
+
+.footer .footer-icons > .footer-link {
+	display: inline-block;
+	margin-left: 10px;
+	color: #FFFFFF;
+}
